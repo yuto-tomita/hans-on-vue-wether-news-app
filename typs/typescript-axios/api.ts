@@ -41,10 +41,10 @@ export interface CoffeeHotGet200ResponseInner {
     'description'?: string;
     /**
      * 
-     * @type {Array<string>}
+     * @type {CoffeeHotGet200ResponseInnerIngredients}
      * @memberof CoffeeHotGet200ResponseInner
      */
-    'ingredients'?: Array<string>;
+    'ingredients'?: CoffeeHotGet200ResponseInnerIngredients;
     /**
      * 
      * @type {string}
@@ -53,11 +53,23 @@ export interface CoffeeHotGet200ResponseInner {
     'image'?: string;
     /**
      * 
-     * @type {number}
+     * @type {CoffeeHotGet200ResponseInnerId}
      * @memberof CoffeeHotGet200ResponseInner
      */
-    'id'?: number;
+    'id'?: CoffeeHotGet200ResponseInnerId;
 }
+/**
+ * @type CoffeeHotGet200ResponseInnerId
+ * @export
+ */
+export type CoffeeHotGet200ResponseInnerId = number | string;
+
+/**
+ * @type CoffeeHotGet200ResponseInnerIngredients
+ * @export
+ */
+export type CoffeeHotGet200ResponseInnerIngredients = Array<string> | string;
+
 
 /**
  * DefaultApi - axios parameter creator
