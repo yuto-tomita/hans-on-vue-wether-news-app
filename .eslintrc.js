@@ -8,8 +8,7 @@ module.exports = {
     'plugin:tailwindcss/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
-    // "eslint:recommended",
-    'prettier'
+    'eslint:recommended'
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -37,7 +36,6 @@ module.exports = {
     'no-multi-spaces': 'error',
     'no-multiple-empty-lines': 'error',
     'no-whitespace-before-property': 'error',
-    'object-curly-spacing': ['error', 'always'],
     quotes: ['error', 'single'],
     'rest-spread-spacing': ['error', 'never'],
     /** eslint-plugin-typescript options */
