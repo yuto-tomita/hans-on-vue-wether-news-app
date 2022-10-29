@@ -1,0 +1,41 @@
+openapi: 3.0.3
+info:
+  title: Vueハンズオン
+  version: 1.0.0
+servers:
+  - url: https://api.sampleapis.com/
+    description: サンプルAPIエンドポイント
+  - url: http://localhost:8080/
+    description: mock serverエンドポイント
+paths:
+  /coffee/hot:
+   get:
+    tags:
+     - ホットコーヒー
+    responses:
+      '200':
+        description: OK
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                properties:
+                  title:
+                    type: string
+                    example: black coffee
+                  description:
+                    type: string
+                    example: this is example
+                  ingredients:
+                   type: array
+                   items:
+                    type: string
+                    example: 'example'
+                  image: 
+                   type: string
+                   example: https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG
+                  id:
+                   type: number
+                   example: 0
