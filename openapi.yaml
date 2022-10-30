@@ -42,6 +42,37 @@ paths:
                   id:
                     oneOf:
                       - type: number
-                        example: 0
+                        example: 1
                       - type: string
                         example: '1'
+  /coffee/iced:
+    get:
+      tags:
+        - "アイスコーヒー"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    title:
+                      type: string
+                      example: 'Iced Coffee'
+                    description: 
+                      type: string
+                      example: 'black coffee'
+                    ingredients:
+                      type: array
+                      items:
+                        type: string
+                        example: 'Coffee'
+                    image:
+                      type: string
+                      example: 'Lorem ipsum'
+                    id:
+                      type: number
+                      example: 1
