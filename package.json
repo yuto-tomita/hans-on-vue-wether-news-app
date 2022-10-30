@@ -8,7 +8,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "type-generate": "openapi-generator-cli generate -g typescript-fetch -i ./openapi.yaml -o ./types/typescript-axios --additional-properties=modelPropertyNaming=camelCase,supportsES6=true,withInterfaces=true,typescriptThreePlus=true"
+    "type-generate": "openapi-generator-cli generate -g typescript-fetch -i ./openapi.yaml -o ./src/types/typescript-fetch --additional-properties=modelPropertyNaming=camelCase,supportsES6=true,withInterfaces=true,typescriptThreePlus=true"
   },
   "dependencies": {
     "pinia": "^2.0.14",
