@@ -26,9 +26,42 @@ import {
 } from '../models';
 
 /**
+ * DefaultApi - interface
+ * 
+ * @export
+ * @interface DefaultApiInterface
+ */
+export interface DefaultApiInterface {
+    /**
+     * 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApiInterface
+     */
+    coffeeHotGetRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<Array<CoffeeHotGet200ResponseInner>>>;
+
+    /**
+     */
+    coffeeHotGet(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<Array<CoffeeHotGet200ResponseInner>>;
+
+    /**
+     * 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DefaultApiInterface
+     */
+    coffeeIcedGetRaw(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<runtime.ApiResponse<Array<CoffeeIcedGet200ResponseInner>>>;
+
+    /**
+     */
+    coffeeIcedGet(initOverrides?: RequestInit | runtime.InitOverrideFunction): Promise<Array<CoffeeIcedGet200ResponseInner>>;
+
+}
+
+/**
  * 
  */
-export class DefaultApi extends runtime.BaseAPI {
+export class DefaultApi extends runtime.BaseAPI implements DefaultApiInterface {
 
     /**
      */
