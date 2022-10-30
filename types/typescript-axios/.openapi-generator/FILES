@@ -1,0 +1,10 @@
+.openapi-generator-ignore
+apis/DefaultApi.ts
+apis/index.ts
+index.ts
+models/CoffeeHotGet200ResponseInner.ts
+models/CoffeeHotGet200ResponseInnerId.ts
+models/CoffeeHotGet200ResponseInnerIngredients.ts
+models/CoffeeIcedGet200ResponseInner.ts
+models/index.ts
+runtime.ts
