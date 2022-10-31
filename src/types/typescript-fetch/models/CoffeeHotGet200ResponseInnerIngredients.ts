@@ -27,7 +27,7 @@ export function CoffeeHotGet200ResponseInnerIngredientsFromJSONTyped(json: any, 
     if ((json === undefined) || (json === null)) {
         return json;
     }
-    return { ...Array<string>FromJSONTyped(json, true), ...stringFromJSONTyped(json, true) };
+    return json;
 }
 
 export function CoffeeHotGet200ResponseInnerIngredientsToJSON(value?: CoffeeHotGet200ResponseInnerIngredients | null): any {

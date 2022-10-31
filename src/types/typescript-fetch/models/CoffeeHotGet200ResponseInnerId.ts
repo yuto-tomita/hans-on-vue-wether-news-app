@@ -27,7 +27,7 @@ export function CoffeeHotGet200ResponseInnerIdFromJSONTyped(json: any, ignoreDis
     if ((json === undefined) || (json === null)) {
         return json;
     }
-    return { ...numberFromJSONTyped(json, true), ...stringFromJSONTyped(json, true) };
+    return json;
 }
 
 export function CoffeeHotGet200ResponseInnerIdToJSON(value?: CoffeeHotGet200ResponseInnerId | null): any {
