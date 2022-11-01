@@ -24,12 +24,12 @@ export const useFetchApi = defineStore('fetchApi', {
     }
   },
   actions: {
-    async fetchHotCoffeeList () {
-      try {
-        this.hotCoffeeList = await defaultApi.coffeeHotGet()
-      } catch(e) {
+    fetchHotCoffeeList() {
+      defaultApi.coffeeHotGet().then((res) => {
+        this.hotCoffeeList = res
+      }).catch(e => {
         console.log(e)
-      }
+      })
     },
     async fetchIcedCoffeeList() {
       try {
