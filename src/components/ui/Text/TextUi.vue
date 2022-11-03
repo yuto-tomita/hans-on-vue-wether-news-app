@@ -13,9 +13,9 @@ type Classes = VariantClasses[Variant]
 
 const variantStyle = computed((): Classes => {
   const styleClass: VariantClasses = {
-    h1: 'text-3xl font-bold',
-    h2: 'text-2xl font-bold',
-    h3: 'text-lg font-bold'
+    h1: 'text-4xl font-bold py-5',
+    h2: 'text-3xl font-bold py-5',
+    h3: 'text-2xl font-bold py-5'
   }
 
   return styleClass[props.variant]
