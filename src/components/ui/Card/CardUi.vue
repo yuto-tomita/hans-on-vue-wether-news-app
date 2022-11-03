@@ -15,7 +15,7 @@ withDefaults(defineProps<Props>(), {
 
 <template>
   <div
-    class="border border-2 border-stone-200 w-1/5 shadow-xl"
+    class="border-2 border-stone-200 w-1/5 shadow-xl"
     style="height: 600px"
   >
 	
