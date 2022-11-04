@@ -16,18 +16,20 @@ withDefaults(defineProps<Props>(), {
 <template>
   <div
     class=" border-2 border-stone-200 w-1/5 shadow-xl"
-    :style="{'height': '600px', 'min-width': '250px'}"
+    :style="{'height': '700px', 'min-width': '250px'}"
   >
 	
     <img
       :src="imgSrc"
       class="h-1/2 w-full"
     >
-    <div class="m-auto flex justify-center items-center">
-      <Text variant="h2">
-        {{ title }}
-      </Text>
-    </div>
+
+    <Text
+      variant="h2"
+      class="text-center"
+    >
+      {{ title }}
+    </Text>
 
     <p class=" px-4 font-bold">
       {{ description }}
