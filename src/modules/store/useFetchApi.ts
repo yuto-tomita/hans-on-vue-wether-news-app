@@ -17,7 +17,11 @@ export const useFetchApi = defineStore('fetchApi', {
   getters: {
     getHotCoffeeList(state) {
       // apiから余計?なデータが混ざっているためfilteringする
-      return state.hotCoffeeList.filter(val => typeof val.id !== 'string')
+      const urlPattern = /^https?:\/\/[\w/:%#$&?()~.=+-]+$/
+      return state.hotCoffeeList.filter(val => {
+        // プロパティidが文字列かつ、プロパティimageがURLの形式になっているもののみにフィルタリング
+        return typeof val.id !== 'string' && new RegExp(urlPattern).test(val.image || '')
+      })
     },
     getIcedCoffeeList(state) {
       return state.icedCoffeeList
