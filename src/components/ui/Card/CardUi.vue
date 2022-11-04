@@ -15,8 +15,8 @@ withDefaults(defineProps<Props>(), {
 
 <template>
   <div
-    class="border-2 border-stone-200 w-1/5 shadow-xl"
-    style="height: 600px"
+    class=" border-2 border-stone-200 w-1/5 shadow-xl"
+    :style="{'height': '600px', 'min-width': '250px'}"
   >
 	
     <img
