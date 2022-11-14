@@ -3,7 +3,7 @@
 ### 環境構築
 
 ```
-$ git clone https://github.com/yuto-tomita/hans-on-vue-wether-news-app
+$ git clone https://github.com/yuto-tomita/hans-on-vue-wether-news-app.git
 ```
 
 ```
